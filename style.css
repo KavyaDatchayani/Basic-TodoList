@@ -13,9 +13,15 @@
   padding: 30px;
 }
 .container #title {
+  padding: 20px;
+}
+span {
+  color: #000;
+}
+.container #title,
+.container #currentDate {
   text-align: center;
   color: #8b93ff;
-  padding: 20px;
 }
 input,
 button {
