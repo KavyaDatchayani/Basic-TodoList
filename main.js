@@ -1,9 +1,13 @@
 const inputValue = document.querySelector("#inputValue");
 var listItems = document.querySelector('#list');
+let addTask = document.querySelector('#add');
+let showDate = document.querySelector('#currentDate');
 
+let today = (new Date()).toLocaleDateString('en-US')
 
+showDate.innerHTML = `<span>Date:</span> ${today}`
 
-document.querySelector('#add').addEventListener('click', function () {
+addTask.addEventListener('click', function () {
 
     var input = inputValue.value;
     var newlist = document.createElement('li');
